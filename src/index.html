@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trello DnD</title>
+    <!-- СТИЛИ ПОДКЛЮЧАТЬ НЕ НУЖНО! Webpack сделает это сам -->
+  </head>
+  <body>
+    <div class="board">
+      <!-- Колонка TODO -->
+      <div class="column" data-column-id="todo">
+        <div class="column-header">Todo</div>
+        <!-- КЛАСС add-card-btn ОБЯЗАТЕЛЕН -->
+        <button class="add-card-btn">+ Add another card</button>
+        <div class="card-list"></div>
+      </div>
+
+      <!-- Колонка In Progress -->
+      <div class="column" data-column-id="in-progress">
+        <div class="column-header">In Progress</div>
+        <button class="add-card-btn">+ Add another card</button>
+        <div class="card-list"></div>
+      </div>
+
+      <!-- Колонка Done -->
+      <div class="column" data-column-id="done">
+        <div class="column-header">Done</div>
+        <button class="add-card-btn">+ Add another card</button>
+        <div class="card-list"></div>
+      </div>
+    </div>
+    <!-- СКРИПТЫ ПОДКЛЮЧАТЬ НЕ НУЖНО! Webpack сделает это сам -->
+  </body>
+</html>
